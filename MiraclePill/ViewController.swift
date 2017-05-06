@@ -14,6 +14,9 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     @IBOutlet weak var StatePickerBtn: UIButton!
     
+    
+    @IBOutlet weak var butNowBtn: UIButton!
+    
     let states = ["Alaska","Arkansas","Nevada","Florida","California"]
     
     override func viewDidLoad() {
@@ -26,6 +29,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //Below begins button for STATES!
 
     @IBAction func StateButtonBressed(_ sender: Any) {
         StatePicker.isHidden = false
@@ -45,6 +50,17 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         StatePickerBtn.setTitle(states[row], for: UIControlState() )
         StatePicker.isHidden = true
     }
+    
+    
+    @IBAction func buyNowPressed(_ sender: Any) {
+        
+    }
+ 
+    
+    
+
+    
+    
     
 
 }
